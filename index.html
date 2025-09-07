@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  
+        <!-- tells the browser which character encoding your html file uses, wiyhout it the browser might misinterpret special characters  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Contact Us Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-box">
+            <h2>Contact Us</h2> 
+            <form> 
+                <div class="row"> 
+
+                    <div class="class-form">
+                        <label for="firstname">First Name <span class ="required" style="color:green;">*</span></label>
+                        <input type="text" id="firstname" name="first name"  required> 
+                    </div>
+                
+
+                    <div class=" class-form">
+                    <label for="lastname">Last Name <span class ="required" style="color:green;" >*</span> </label>
+                    <input type="text" id="Lastname" name="Last name"  required> 
+                    </div>
+                </div>
+
+                <div class="class-form">
+                    <label for="email">Email<span class ="required" style="color:green">*</span> </label> <br>
+                    <input type="email" id="email" name="email"  required> 
+                </div>
+
+
+                <div class="row">
+                    <div class="query-type">
+                    <label for="Query Type"> Query Type <span class =" required" style="color:green;">*</span></label> 
+                    </div>
+                    <div class="radio-option"> <br>
+                        <div class="query-box">
+                        <input type="radio" name="query type" value="general query" id="opt1">
+                        <label for="opt1">General Query</label>
+                        </div>
+                        <div class="query-box">
+                        <input type="radio" name="query type" value="support request"id="opt2">
+                        <label for="opt2">Support Request</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class=" message" >Message <span style = "color: green;">*</span></label> <br>
+                    <textarea id="message" name="message"  required></textarea>
+            
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"  id=" consent" name="consent" required>
+                    <label for="consent"> I consent to being contacted by the team</label>
+                
+                </div>
+                <div>
+                    <button type="submit" class="submit"> Submit</button>
+                </div>
+                
+            </form>   
+        
+        </div>    
+        
+    </body>
+
+
+</html>
